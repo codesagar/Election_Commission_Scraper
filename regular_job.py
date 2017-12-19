@@ -10,7 +10,7 @@ def election_result():
     base = "http://eciresults.nic.in/StatewiseS06" + ".htm"
     x = "http://eciresults.nic.in/StatewiseS06"
     y = ".htm"
-    next_pages = [x+str(n)+y for n in range(1,14)]
+    next_pages = [x+str(n)+y for n in range(1,19)]
     to_visit.extend(next_pages)
 
     prefix = datetime.now().strftime('%Y-%m-%d_%H:%M')
